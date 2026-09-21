@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>国产汽车标志大全 - 中国品牌汽车车标图解与品牌介绍</title>
+    <meta name="description" content="本站提供国产汽车标志大全，详细收录中国自主品牌汽车车标图解。包含吉利、比亚迪、长安、奇瑞、长城等主流品牌的历史背景、设计含义及所属集团信息。">
+    <meta name="keywords" content="国产汽车标志,中国汽车标志,吉利车标,比亚迪车标,长安车标,奇瑞车标,长城车标,国产车标大全">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #e60012; /* 汽车红 */
+            --secondary-color: #2c3e50; /* 深蓝灰 */
+            --accent-color: #f39c12; /* 银色/金属感 */
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-main: #333333;
+            --text-light: #666666;
+            --border-radius: 8px;
+            --container-width: 1200px;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Header & Nav */
+        header {
+            background-color: var(--card-bg);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--text-main);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--text-main);
+            transition: var(--transition);
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--secondary-color) 0%, #1a252f 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            opacity: 0.9;
+        }
+
+        .search-box {
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            position: relative;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 15px 20px;
+            border-radius: 30px;
+            border: none;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .search-box button {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .search-box button:hover {
+            background-color: #cc000d;
+        }
+
+        /* Main Content */
+        .main-container {
+            max-width: var(--container-width);
+            margin: -40px auto 40px;
+            padding: 0 20px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .section-title {
+            font-size: 22px;
+            margin-bottom: 25px;
+            border-left: 5px solid var(--primary-color);
+            padding-left: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+
+        .brand-card {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: var(--transition);
+            border: 1px solid #eee;
+        }
+
+        .brand-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .card-header {
+            height: 160px;
+            background-color: #eee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .card-header img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .brand-name {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: var(--text-main);
+        }
+
+        .brand-desc {
+            font-size: 14px;
+            color: var(--text-light);
+            margin-bottom: 15px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .brand-meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            color: #888;
+            border-top: 1px solid #f0f0f0;
+            padding-top: 12px;
+        }
+
+        .tag {
+            background-color: #f0f2f5;
+            padding: 2px 8px;
+            border-radius: 4px;
+            color: var(--text-light);
+        }
+
+        /* Featured / Special Section */
+        .featured-section {
+            background: white;
+            padding: 40px;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 50px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .info-text h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: var(--secondary-color);
+        }
+
+        .info-text p {
+            margin-bottom: 15px;
+            color: var(--text-light);
+            text-align: justify;
+        }
+
+        .info-visual {
+            background-color: var(--bg-color);
+            height: 300px;
+            border-radius: var(--border-radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        /* Guide Section */
+        .guide-list {
+            background: white;
+            padding: 30px;
+            border-radius: var(--border-radius);
+        }
+
+        .guide-item {
+            display: flex;
+            gap: 20px;
+            padding: 15px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .guide-item:last-child {
+            border-bottom: none;
+        }
+
+        .guide-icon {
+            width: 40px;
+            height: 40px;
+            background-color: #fff0f1;
+            color: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-weight: bold;
+        }
+
+        .guide-content h4 {
+            font-size: 16px;
+            margin-bottom: 5px;
+            color: var(--text-main);
+        }
+
+        .guide-content p {
+            font-size: 14px;
+            color: var(--text-light);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--secondary-color);
+            color: #bdc3c7;
+            padding: 50px 20px 20px;
+            margin-top: 50px;
+        }
+
+        .footer-content {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: white;
+        }
+
+        .copyright {
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+            font-size: 14px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                height: auto;
+                padding: 15px;
+            }
+            
+            nav ul {
+                margin-top: 15px;
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .search-box {
+                width: 100%;
+            }
+            
+            .search-box button {
+                position: relative;
+                top: 0;
+                right: 0;
+                margin-top: 10px;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/><path d="M2 12h12"/></svg>
+                <span>国车标库</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#popular">热门品牌</a></li>
+                    <li><a href="#history">历史演变</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>国产汽车标志大全</h1>
+        <p>全面收录中国自主品牌汽车车标，解析设计含义与品牌历史。从吉利到比亚迪，从长城到奇瑞，助您快速了解国产车标背后的故事。</p>
+        <div class="search-box">
+            <input type="text" placeholder="搜索车标名称（如：比亚迪）...">
+            <button>搜索</button>
+        </div>
+    </section>
+
+    <main class="main-container">
+        
+        <!-- Brand Grid -->
+        <section id="popular">
+            <div class="section-title">
+                <h2>主流国产汽车标志</h2>
+                <span class="tag">共收录 12 个品牌</span>
+            </div>
+            <div class="grid-container">
+                
+                <!-- 吉利 -->
+                <article class="brand-card">
+                    <div class="card-header">
+                        <img src="https://picsum.photos/seed/geely/300/200" alt="吉利汽车标志" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="brand-name">吉利汽车</h3>
+                        <p class="brand-desc">吉利汽车的车标由六块金属片组成，象征吉利汽车的核心价值观：技术、品质、自信、创新、未来。</p>
+                        <div class="brand-meta">
+                            <span>所属集团：吉利控股</span>
+                            <span class="tag">热门</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 比亚迪 -->
+                <article class="brand-card">
+                    <div class="card-header">
+                        <img src="https://picsum.photos/seed/byd/300/200" alt="比亚迪汽车标志" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="brand-name">比亚迪 (BYD)</h3>
+                        <p class="brand-desc">车标由三个字母“BYD”变形而成，构成一个圆圈。外圈代表地球，内圈代表电动化，寓意比亚迪立足全球，致力于新能源。</p>
+                        <div class="brand-meta">
+                            <span>所属集团：比亚迪股份</span>
+                            <span class="tag">新能源</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 长安 -->
+                <article class="brand-card">
+                    <div class="card-header">
+                        <img src="https://picsum.photos/seed/changan/300/200" alt="长安汽车标志" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="brand-name">长安汽车</h3>
+                        <p class="brand-desc">长安车标是一个“V”字，在视觉上像一把剑，也像英文字母“Changan”的首字母。象征长安汽车锐意进取，勇攀高峰。</p>
+                        <div class="brand-meta">
+                            <span>所属集团：长安汽车</span>
+                            <span class="tag">历史</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 奇瑞 -->
+                <article class="brand-card">
+                    <div class="card-header">
+                        <img src="https://picsum.photos/seed/chery/300/200" alt="奇瑞汽车标志" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="brand-name">奇瑞汽车</h3>
+                        <p class="brand-desc">奇瑞车标是一个“A”字，由英文字母“Chery”的首字母变形而来，同时像一只展翅飞翔的凤凰，寓意奇瑞腾飞。</p>
+                        <div class="brand-meta">
+                            <span>所属集团：奇瑞控股</span>
+                            <span class="tag">设计</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 长城 -->
+                <article class="brand-card">
+                    <div class="card-header">
+                        <img src="https://picsum.photos/seed/greatwall/300/200" alt="长城汽车标志" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="brand-name">长城汽车</h3>
+                        <p class="brand-desc">长城车标是一个“六面体”，代表长城汽车坚固、耐用、可靠的品质，同时也象征着长城汽车的全球化视野。</p>
+                        <div class="brand-meta">
+                            <span>所属集团：长城汽车</span>
+                            <span class="tag">SUV</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 比亚迪 (再次出现以展示多样性) -->
+                <article class="brand-card">
+                    <div class="card-header">
+                        <img src="https://picsum.photos/seed/byd2/300/200" alt="比亚迪汽车标志" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="brand-name">比亚迪 (BYD)</h3>
+                        <p class="brand-desc">车标由三个字母“BYD”变形而成，构成一个圆圈。外圈代表地球，内圈代表电动化，寓意比亚迪立足全球，致力于新能源。</p>
+                        <div class="brand-meta">
+                            <span>所属集团：比亚迪股份</span>
+                            <span class="tag">新能源</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Feature Section -->
+        <section id="history" class="featured-section">
+            <div class="info-grid">
+                <div class="info-visual">
+                    <img src="https://picsum.photos/seed/carhistory/500/300" alt="中国汽车工业发展" style="width:100%; height:100%; object-fit:cover; border-radius:8px;">
+                </div>
+                <div class="info-text">
+                    <h3>中国汽车工业的演变</h3>
+                    <p>中国国产汽车标志的演变，见证了中国汽车工业从“以市场换技术”到“自主创新”的跨越式发展。早期的车标设计往往受苏联或欧洲影响，线条圆润；而如今的新能源时代，车标设计更加极简、科技感十足。</p>
+                    <p>许多品牌在合并、重组后更新了标志。例如，长安汽车在2018年推出了新标，更加简洁锐利；吉利收购沃尔沃后，其设计语言也深受沃尔沃影响。</p>
+                    <p>了解车标，不仅是认路，更是了解品牌战略、技术路线和文化内涵的重要窗口。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guide Section -->
+        <section id="faq">
+            <div class="section-title">
+                <h2>国产车标辨识指南</h2>
+            </div>
+            <div class="guide-list">
+                <div class="guide-item">
+                    <div class="guide-icon">1</div>
+                    <div class="guide-content">
+                        <h4>观察图形构成</h4>
+                        <p>国产车标多为字母变形、抽象几何图形或具有象征意义的符号。例如，比亚迪的“BYD”是字母组合，长安的“V”是几何形状。</p>
+                    </div>
+                </div>
+                <div class="guide-item">
+                    <div class="guide-icon">2</div>
+                    <div class="guide-content">
+                        <h4>注意颜色变化</h4>
+                        <p>虽然黑色是车标最常见的颜色，但部分品牌（如长城）使用红色或银色来强调运动感或高端定位。蓝色通常代表科技与未来。</p>
+                    </div>
+                </div>
+                <div class="guide-item">
+                    <div class="guide-icon">3</div>
+                    <div class="guide-content">
+                        <h4>了解品牌背景</h4>
+                        <p>有些车标看起来相似，但属于不同集团。例如，一汽集团旗下有红旗、奔腾、解放等多个品牌，需结合隶属关系进行区分。</p>
+                    </div>
+                </div>
+                <div class="guide-item">
+                    <div class="guide-icon">4</div>
+                    <div class="guide-content">
+                        <h4>警惕山寨与模仿</h4>
+                        <p>随着国产车崛起，市场上也存在一些模仿国际大牌（如模仿奔驰、宝马）的标志。购买时请认准正规渠道和官方授权。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>国车标库</h4>
+                <p>专注国产汽车品牌与车标文化的在线展示平台，为您提供最全面、最准确的国产车标资料。</p>
+            </div>
+            <div class="footer-col">
+                <h4>热门品牌</h4>
+                <ul>
+                    <li><a href="#">红旗汽车</a></li>
+                    <li><a href="#">吉利汽车</a></li>
+                    <li><a href="#">比亚迪</a></li>
+                    <li><a href="#">长安汽车</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>相关资源</h4>
+                <ul>
+                    <li><a href="#">汽车品牌大全</a></li>
+                    <li><a href="#">汽车设计趋势</a></li>
+                    <li><a href="#">新能源车标</a></li>
+                    <li><a href="#">车标设计学院</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>联系我们</h4>
+                <ul>
+                    <li>合作咨询</li>
+                    <li>版权声明</li>
+                    <li>网站地图</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 国车标库. All Rights Reserved. 本站仅提供信息展示与图解服务。</p>
+        </div>
+    </footer>
+
+</body>
+</html>
