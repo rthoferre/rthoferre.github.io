@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="For的同音词大全及同音字查询工具，提供for的中文同音词列表，帮助用户快速查找发音相同的汉字和词汇，适用于学习英语发音、汉字纠错及输入法联想。">
+    <meta name="keywords" content="For, for的同音词, for的同音字, 英语同音词, 发音相同, 汉字读音">
+    <title>For的同音词 - 英语发音同音词查询与学习指南</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --primary-hover: #1d4ed8;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #1e293b;
+            --text-secondary: #64748b;
+            --border-color: #e2e8f0;
+            --accent-bg: #eff6ff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* 布局容器 */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 头部样式 */
+        header {
+            background-color: var(--card-bg);
+            border-bottom: 1px solid var(--border-color);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            background: var(--accent-bg);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 1.2rem;
+        }
+
+        /* 导航 */
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-secondary);
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--primary-color);
+        }
+
+        /* 主区域 */
+        main {
+            padding: 40px 0;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, var(--accent-bg) 0%, #ffffff 100%);
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: var(--text-main);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        /* 搜索框区域 */
+        .search-box {
+            position: relative;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 15px 20px;
+            padding-right: 50px;
+            font-size: 1.1rem;
+            border: 2px solid var(--border-color);
+            border-radius: 30px;
+            outline: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        .search-input:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+        }
+
+        .search-btn {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            bottom: 5px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 0 25px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .search-btn:hover {
+            background-color: var(--primary-hover);
+        }
+
+        /* 核心内容区 */
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+
+        /* 结果列表 */
+        .result-section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .word-card {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border: 1px solid var(--border-color);
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .word-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border-color: var(--primary-color);
+        }
+
+        .word-info h3 {
+            font-size: 1.25rem;
+            margin-bottom: 5px;
+        }
+
+        .word-info p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .phonetic {
+            font-family: "Lucida Sans Unicode", "Arial Unicode MS", sans-serif;
+            font-style: italic;
+            color: var(--primary-color);
+            margin-left: 10px;
+        }
+
+        .copy-btn {
+            background: none;
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            padding: 8px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+
+        .copy-btn:hover {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        /* 侧边栏 */
+        aside {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            height: fit-content;
+        }
+
+        aside h3 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            color: var(--text-main);
+        }
+
+        .info-list {
+            list-style: none;
+        }
+
+        .info-list li {
+            margin-bottom: 12px;
+            padding-bottom: 12px;
+            border-bottom: 1px dashed var(--border-color);
+        }
+
+        .info-list li:last-child {
+            border-bottom: none;
+        }
+
+        .info-label {
+            display: block;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 4px;
+        }
+
+        .info-value {
+            font-weight: 500;
+        }
+
+        /* 使用场景 */
+        .usage-section {
+            margin-top: 40px;
+        }
+
+        .usage-section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .usage-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .usage-card {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .usage-card h4 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        .usage-card p {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+
+        /* 页脚 */
+        footer {
+            background-color: var(--card-bg);
+            border-top: 1px solid var(--border-color);
+            padding: 30px 0;
+            margin-top: 50px;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Toast 提示 */
+        .toast {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%) translateY(100px);
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            opacity: 0;
+            transition: all 0.3s;
+            z-index: 1000;
+        }
+
+        .toast.show {
+            transform: translateX(-50%) translateY(0);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-content">
+            <a href="#" class="logo"><span>for</span> 同音词查询</a>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#">同音词库</a></li>
+                    <li><a href="#">发音指南</a></li>
+                    <li><a href="#">关于我们</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>For 的同音词查询</h1>
+            <p>输入英语单词或中文发音，快速查找发音相同或相似的词汇与汉字，辅助语言学习与输入法联想。</p>
+            <div class="search-box">
+                <input type="text" id="searchInput" class="search-input" placeholder="输入 'for' 或拼音 'fu'..." value="for">
+                <button class="search-btn" onclick="filterWords()">查询</button>
+            </div>
+        </section>
+
+        <div class="content-grid">
+            <section class="result-section">
+                <h2>同音词列表</h2>
+                <div id="wordList">
+                    <!-- 单词卡片将通过 JS 动态生成 -->
+                </div>
+            </section>
+
+            <aside>
+                <h3>发音信息</h3>
+                <ul class="info-list">
+                    <li>
+                        <span class="info-label">英语单词</span>
+                        <span class="info-value">for</span>
+                    </li>
+                    <li>
+                        <span class="info-label">IPA 音标</span>
+                        <span class="info-value">/fɔːr/</span>
+                    </li>
+                    <li>
+                        <span class="info-label">中文谐音</span>
+                        <span class="info-value">佛</span>
+                    </li>
+                    <li>
+                        <span class="info-label">词性</span>
+                        <span class="info-value">介词 / 连词</span>
+                    </li>
+                </ul>
+                
+                <h3 style="margin-top: 30px;">常见用法</h3>
+                <ul class="info-list">
+                    <li><span class="info-label">目的</span><span class="info-value">I did this for you.</span></li>
+                    <li><span class="info-label">支持/赞成</span><span class="info-value">Are you for or against it?</span></li>
+                    <li><span class="info-label">持续时间</span><span class="info-value">Wait for me.</span></li>
+                </ul>
+            </aside>
+        </div>
+
+        <section class="usage-section">
+            <h2>应用场景与提示</h2>
+            <div class="usage-grid">
+                <article class="usage-card">
+                    <h4>输入法联想</h4>
+                    <p>在中文输入法中输入拼音 "fu"，除了 "福"、"服" 等字外，经常会出现英语单词 "for"。了解其发音有助于快速定位和修正输入错误。</p>
+                </article>
+                <article class="usage-card">
+                    <h4>英语听力辨音</h4>
+                    <p>在听英语听力时，注意区分 "for" (/fɔːr/) 与 "four" (/fɔːr/)。它们拼写不同，但在美式英语中发音完全相同，需结合上下文判断。</p>
+                </article>
+                <article class="usage-card">
+                    <h4>汉字谐音记忆</h4>
+                    <p>利用 "for" 发音像中文的 "佛" (fó)，可以帮助记忆相关词汇的拼写结构（如 force, forge 等）。</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 For同音词查询工具. 仅供学习参考使用.</p>
+        </div>
+    </footer>
+
+    <div id="toast" class="toast">已复制到剪贴板</div>
+
+    <script>
+        // 模拟的同音词数据库
+        const wordDatabase = [
+            { en: "for", cn: "为了，因为", phonetic: "/fɔːr/" },
+            { en: "four", cn: "四", phonetic: "/fɔːr/" },
+            { en: "force", cn: "力量，强迫", phonetic: "/fɔːrs/" },
+            { en: "form", cn: "形式，表格", phonetic: "/fɔːrm/" },
+            { en: "forest", cn: "森林", phonetic: "/ˈfɔːrɪst/" },
+            { en: "forgive", cn: "原谅", phonetic: "/fərˈɡɪv/" },
+            { en: "forget", cn: "忘记", phonetic: "/fərˈɡet/" },
+            { en: "formal", cn: "正式的", phonetic: "/ˈfɔːrməl/" },
+            { en: "former", cn: "前任的，以前的", phonetic: "/ˈfɔːrmər/" },
+            { en: "fort", cn: "堡垒", phonetic: "/fɔːrt/" },
+            { en: "forth", cn: "向前，向外", phonetic: "/fɔːrθ/" },
+            { en: "forty", cn: "四十", phonetic: "/ˈfɔːrti/" }
+        ];
+
+        function renderWords(filterText = '') {
+            const listContainer = document.getElementById('wordList');
+            listContainer.innerHTML = '';
+
+            const filteredWords = wordDatabase.filter(word => 
+                word.en.toLowerCase().includes(filterText.toLowerCase()) || 
+                word.cn.includes(filterText)
+            );
+
+            if (filteredWords.length === 0) {
+                listContainer.innerHTML = '<p style="text-align:center; color:#666; padding:20px;">未找到相关同音词</p>';
+                return;
+            }
+
+            filteredWords.forEach(word => {
+                const card = document.createElement('div');
+                card.className = 'word-card';
+                card.innerHTML = `
+                    <div class="word-info">
+                        <h3>${word.en} <span class="phonetic">${word.phonetic}</span></h3>
+                        <p>${word.cn}</p>
+                    </div>
+                    <button class="copy-btn" onclick="copyText('${word.en}')">复制</button>
+                `;
+                listContainer.appendChild(card);
+            });
+        }
+
+        function filterWords() {
+            const input = document.getElementById('searchInput').value;
+            renderWords(input);
+        }
+
+        function copyText(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                showToast(`已复制: ${text}`);
+            }).catch(err => {
+                console.error('无法复制文本: ', err);
+            });
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.classList.add('show');
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 2000);
+        }
+
+        // 页面加载时渲染默认内容
+        document.addEventListener('DOMContentLoaded', () => {
+            renderWords('for');
+        });
+    </script>
+</body>
+</html>
