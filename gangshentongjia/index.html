@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>港深通驾校官网-深港两地驾考培训与一站式服务平台</title>
+    <meta name="description" content="港深通驾校官网提供深圳、香港两地驾照培训服务，涵盖车管所考试、私家车陪练、港澳台同胞考证及企业团训。专业教练团队，通过率高，报名流程透明，助您轻松考取驾照。">
+    <meta name="keywords" content="港深通驾校官网,深圳驾校,香港驾校,深港驾照,驾考培训,私家车陪练">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #fca311;
+            --text-dark: #1f2937;
+            --text-gray: #4b5563;
+            --bg-light: #f3f4f6;
+            --white: #ffffff;
+            --border-radius: 8px;
+            --container-width: 1200px;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--white);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Layout Utilities */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-padding {
+            padding: 60px 0;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .flex-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--secondary-color);
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-menu a {
+            font-weight: 500;
+            color: var(--text-dark);
+            transition: var(--transition);
+            font-size: 16px;
+        }
+
+        .nav-menu a:hover, .nav-menu a.active {
+            color: var(--primary-color);
+        }
+
+        .cta-button {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 10px 25px;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .cta-button:hover {
+            background-color: #004494;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 86, 179, 0.3);
+        }
+
+        .cta-button.secondary {
+            background-color: var(--secondary-color);
+            color: var(--text-dark);
+        }
+
+        .cta-button.secondary:hover {
+            background-color: #e08e0b;
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-btn {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 86, 179, 0.85), rgba(0, 86, 179, 0.7)), url('https://picsum.photos/seed/driving_school_hero/1920/1080.jpg') center/cover no-repeat;
+            color: var(--white);
+            padding: 100px 0 120px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .hero .cta-button {
+            background-color: var(--white);
+            color: var(--primary-color);
+        }
+
+        .hero .cta-button:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Stats Bar */
+        .stats-bar {
+            background-color: var(--white);
+            margin-top: -50px;
+            position: relative;
+            border-radius: var(--border-radius);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 30px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .stat-item {
+            text-align: center;
+            border-right: 1px solid #eee;
+        }
+
+        .stat-item:last-child {
+            border-right: none;
+        }
+
+        .stat-number {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: block;
+        }
+
+        .stat-label {
+            color: var(--text-gray);
+            font-size: 14px;
+        }
+
+        /* Services Section */
+        .section-header {
+            margin-bottom: 50px;
+        }
+
+        .section-header h2 {
+            font-size: 36px;
+            color: var(--text-dark);
+            margin-bottom: 15px;
+        }
+
+        .section-header p {
+            color: var(--text-gray);
+            font-size: 18px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: var(--white);
+            border: 1px solid #eee;
+            border-radius: var(--border-radius);
+            padding: 30px;
+            transition: var(--transition);
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+            border-color: transparent;
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background-color: rgba(0, 86, 179, 0.1);
+            color: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            color: var(--text-gray);
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+
+        .service-link {
+            color: var(--primary-color);
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* Why Choose Us */
+        .why-us {
+            background-color: var(--bg-light);
+        }
+
+        .why-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .why-image img {
+            border-radius: var(--border-radius);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        .why-list {
+            margin-top: 30px;
+        }
+
+        .why-item {
+            display: flex;
+            margin-bottom: 20px;
+            align-items: flex-start;
+        }
+
+        .why-icon {
+            min-width: 30px;
+            height: 30px;
+            background-color: var(--secondary-color);
+            color: var(--text-dark);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 15px;
+            margin-top: 5px;
+        }
+
+        .why-text h4 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .why-text p {
+            color: var(--text-gray);
+            font-size: 14px;
+        }
+
+        /* Process Section */
+        .process-steps {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            margin-top: 50px;
+        }
+
+        .process-steps::before {
+            content: '';
+            position: absolute;
+            top: 25px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #e5e7eb;
+            z-index: 0;
+        }
+
+        .step {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            flex: 1;
+        }
+
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background-color: var(--white);
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            margin: 0 auto 20px;
+            font-size: 20px;
+        }
+
+        .step h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .step p {
+            font-size: 14px;
+            color: var(--text-gray);
+            padding: 0 10px;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background-color: var(--white);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #eee;
+            padding: 20px 0;
+        }
+
+        .faq-question {
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 24px;
+            color: var(--primary-color);
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            color: var(--text-gray);
+            font-size: 15px;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+            margin-top: 15px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #111827;
+            color: #d1d5db;
+            padding: 60px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-info h3 {
+            color: var(--white);
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        .footer-info p {
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .footer-links h4 {
+            color: var(--white);
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .footer-links ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #374151;
+            padding-top: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .why-content {
+                grid-template-columns: 1fr;
+            }
+            .why-image {
+                order: -1;
+            }
+            .process-steps {
+                flex-wrap: wrap;
+                gap: 30px;
+            }
+            .process-steps::before {
+                width: 2px;
+                height: 100%;
+                left: 50%;
+                top: 0;
+                transform: translateX(-50%);
+            }
+            .step {
+                flex: 1 1 40%;
+            }
+            .stats-bar {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu, .cta-button.desktop-only {
+                display: none;
+            }
+            .mobile-menu-btn {
+                display: block;
+            }
+            .hero h1 {
+                font-size: 32px;
+            }
+            .hero-buttons {
+                flex-direction: column;
+            }
+            .stats-bar {
+                grid-template-columns: 1fr;
+            }
+            .stat-item {
+                border-right: none;
+                border-bottom: 1px solid #eee;
+                padding-bottom: 15px;
+            }
+            .stat-item:last-child {
+                border-bottom: none;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-wrapper">
+            <a href="#" class="logo">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/>
+                    <circle cx="7" cy="17" r="2"/>
+                    <circle cx="17" cy="17" r="2"/>
+                </svg>
+                港深通驾校
+            </a>
+            
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#services">培训项目</a></li>
+                    <li><a href="#process">报考流程</a></li>
+                    <li><a href="#about">关于我们</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#contact" class="cta-button desktop-only">立即报名</a>
+                <div class="mobile-menu-btn">☰</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>深港两地驾照，轻松一步到位</h1>
+            <p>专注深港两地驾考培训服务，为您提供私家车陪练、港澳台同胞考证及企业团训。正规教练团队，通过率高，报名流程透明。</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="cta-button">免费咨询预约</a>
+                <a href="#process" class="cta-button secondary">了解报考流程</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <div class="container">
+        <div class="stats-bar">
+            <div class="stat-item">
+                <span class="stat-number">10+</span>
+                <span class="stat-label">年行业经验</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">98%</span>
+                <span class="stat-label">学员通过率</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">50+</span>
+                <span class="stat-label">专业教练团队</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">10,000+</span>
+                <span class="stat-label">成功学员案例</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>全方位驾考培训服务</h2>
+                <p>根据您的需求，提供定制化的一站式驾考解决方案</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <article class="service-card">
+                    <div class="service-icon">🚗</div>
+                    <h3>私家车陪练</h3>
+                    <p>针对刚拿驾照或技术不熟练的学员，提供专业教练一对一陪练服务，熟悉路况，提升驾驶信心。</p>
+                    <a href="#" class="service-link">查看详情 &rarr;</a>
+                </article>
+
+                <!-- Service 2 -->
+                <article class="service-card">
+                    <div class="service-icon">🇭🇰</div>
+                    <h3>香港驾照考试</h3>
+                    <p>为港澳台同胞及外籍人士提供香港驾照笔试及路试培训，助您快速获得香港驾驶资格。</p>
+                    <a href="#" class="service-link">查看详情 &rarr;</a>
+                </article>
+
+                <!-- Service 3 -->
+                <article class="service-card">
+                    <div class="service-icon">🇨🇳</div>
+                    <h3>深圳/香港驾照转换</h3>
+                    <p>针对持有香港驾照的内地居民，提供正规的内地驾考培训及考试服务，实现两地驾照互通。</p>
+                    <a href="#" class="service-link">查看详情 &rarr;</a>
+                </article>
+
+                <!-- Service 4 -->
+                <article class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3>企业团训服务</h3>
+                    <p>为企业员工提供团体驾驶培训，提升员工安全驾驶意识，打造专业的企业车队管理。</p>
+                    <a href="#" class="service-link">查看详情 &rarr;</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="about" class="section-padding why-us">
+        <div class="container">
+            <div class="why-content">
+                <div class="why-text">
+                    <h2>为什么选择港深通驾校？</h2>
+                    <p>我们致力于为深港两地学员提供最优质、最便捷的驾考培训服务。凭借多年的行业积累，我们建立了完善的培训体系。</p>
+                    
+                    <div class="why-list">
+                        <div class="why-item">
+                            <div class="why-icon">1</div>
+                            <div class="why-text">
+                                <h4>正规合法资质</h4>
+                                <p>持有交通部门颁发的正规驾校培训资质，收费透明，无隐形消费。</p>
+                            </div>
+                        </div>
+                        <div class="why-item">
+                            <div class="why-icon">2</div>
+                            <div class="why-text">
+                                <h4>深港两地考场直通</h4>
+                                <p>熟悉两地考场规则与考试路线，提供针对性的考前模拟训练。</p>
+                            </div>
+                        </div>
+                        <div class="why-item">
+                            <div class="why-icon">3</div>
+                            <div class="why-text">
+                                <h4>灵活的培训时间</h4>
+                                <p>提供早晚班及周末班服务，下班后亦可安排练车，不耽误工作。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <a href="#contact" class="cta-button">预约试驾体验</a>
+                </div>
+                <div class="why-image">
+                    <img src="https://picsum.photos/seed/driving_lesson/600/500.jpg" alt="专业教练指导驾驶">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>报考流程简明</h2>
+                <p>三步走，轻松开启您的驾考之旅</p>
+            </div>
+
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h4>在线咨询/预约</h4>
+                    <p>点击页面下方按钮，或致电客服，说明您的培训需求（如陪练、考证或转换驾照）。</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h4>资料审核与缴费</h4>
+                    <p>提交身份证明及相关资料，经审核通过后，缴纳培训费用，安排教练。</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h4>开始培训与考试</h4>
+                    <p>按照计划进行理论学习与实操训练，熟悉车辆与路况，预约考试。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section-padding faq-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>常见问题解答</h2>
+                <p>关于深港通驾考，您可能关心这些问题</p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">没有香港身份证可以考香港驾照吗？</div>
+                    <div class="faq-answer">通常情况下，考取香港驾照需要持有香港身份证或香港居民来往内地通行证（回乡证）。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">私家车陪练需要多久？</div>
+                    <div class="faq-answer">这取决于学员的驾驶基础。一般建议初次上路陪练3-5次，每次1小时左右，具体可根据实际情况调整。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">考试挂科可以补考吗？</div>
+                    <div class="faq-answer">可以。我们提供免费的补考训练指导，直至您通过考试为止。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何联系贵校报名？</div>
+                    <div class="faq-answer">您可以通过页面底部的联系电话直接联系我们，或填写在线表单进行咨询。</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3>港深通驾校</h3>
+                    <p>致力于提供深港两地最专业、最便捷的驾考培训服务，让每一位学员都能安全、顺利地拿到驾照。</p>
+                    <p>
+                        <strong>咨询热线：</strong> 0755-8888 8888<br>
+                        <strong>地址：</strong> 深圳市南山区科技园科技路88号
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#">驾校首页</a></li>
+                        <li><a href="#">私家车陪练</a></li>
+                        <li><a href="#">香港驾照考试</a></li>
+                        <li><a href="#">企业团训</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>服务项目</h4>
+                    <ul>
+                        <li><a href="#">深圳C1/C2驾考</a></li>
+                        <li><a href="#">香港笔试辅导</a></li>
+                        <li><a href="#">深港驾照转换</a></li>
+                        <li><a href="#">VIP一对一陪练</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>关注我们</h4>
+                    <p>获取最新驾考资讯与优惠活动。</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 港深通驾校官网 版权所有 | 仅供演示用途</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple FAQ Accordion
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    // Close other items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+
+            // Mobile Menu Toggle
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            menuBtn.addEventListener('click', () => {
+                const isFlex = navMenu.style.display === 'flex';
+                navMenu.style.display = isFlex ? 'none' : 'flex';
+                if(!isFlex) {
+                    navMenu.style.flexDirection = 'column';
+                    navMenu.style.position = 'absolute';
+                    navMenu.style.top = '80px';
+                    navMenu.style.left = '0';
+                    navMenu.style.width = '100%';
+                    navMenu.style.background = 'white';
+                    navMenu.style.padding = '20px';
+                    navMenu.style.boxShadow = '0 10px 10px rgba(0,0,0,0.1)';
+                }
+            });
+        });
+    </script>
+</body>
+                                                    </html>
